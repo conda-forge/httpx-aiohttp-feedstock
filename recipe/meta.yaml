@@ -1,5 +1,5 @@
 {% set name = "httpx-aiohttp" %}
-{% set version = "0.1.10" %}
+{% set version = "0.1.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/httpx_aiohttp-{{ version }}.tar.gz
-  sha256: 0d49841c836aaa0824b603b2e28bcaa0e20f808b31d1ef8930be107cdbceeffd
+  sha256: 81feec51fd82c0ecfa0e9aaf1b1a6c2591260d5e2bcbeb7eb0277a78e610df2c
 
 build:
   noarch: python
