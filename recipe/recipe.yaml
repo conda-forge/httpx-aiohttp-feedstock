@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: httpx-aiohttp
-  version: 0.1.12
+  version: "0.2.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/httpx_aiohttp-${{ version }}.tar.gz
-  sha256: 81feec51fd82c0ecfa0e9aaf1b1a6c2591260d5e2bcbeb7eb0277a78e610df2c
+  sha256: d4796b981f04734f1d1db9b4d9326ea16bc994f126460b93b69036262cd4a9d8
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
